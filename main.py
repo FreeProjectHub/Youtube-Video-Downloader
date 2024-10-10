@@ -70,7 +70,9 @@ def checkurl(url):
     return True
 
 def main():
+    print("-----------------------------------------------")
     logger.info("YouTube Video Downloader started.")
+    print("-----------------------------------------------")
     while True:
         url = input("Enter the YouTube video URL ('exit' to stop): ")
         if url.lower() == 'exit':
