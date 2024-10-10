@@ -1,0 +1,2 @@
+yt-dlp
+colorlog==6.7.0
