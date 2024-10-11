@@ -31,8 +31,7 @@ DOWNLOAD_DIR = Path("downloads")
 DOWNLOAD_DIR.mkdir(exist_ok=True)
 
 def ffmpeg():
-    ffmpeg_path = 'C:/ffmpeg'
-    if not Path(ffmpeg_path).exists():
+    if not Path('C:/ffmpeg').exists():
         logger.error("FFMPEG IS NOT FOUND, DOWNLOAD AND PUT THE PATH !!!")
         sys.exit(1)
 
