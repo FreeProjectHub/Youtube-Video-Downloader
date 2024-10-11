@@ -64,7 +64,7 @@ def download_video(video_url):
 
 def checkurl(url):
     if not url.startswith("http"):
-        logger.error("Invalid URL. Please provide a valid YouTube URL.")
+        logger.error("Please provide a valid YouTube URL.")
         return False
     return True
 
@@ -73,7 +73,7 @@ def main():
     logger.info("YouTube Video Downloader started.")
     print("-----------------------------------------------")
     while True:
-        url = input("Enter the YouTube video URL ('exit' to stop): ")
+        url = input("Enter the YouTube video URL and 'exit' to stop :::> ")
         if url.lower() == 'exit':
             logger.info("Good Bye 🙋‍♂️.")
             break
